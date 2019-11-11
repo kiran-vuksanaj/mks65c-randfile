@@ -12,7 +12,7 @@ int printerr(char *while_msg);
 
 int main() {
   int fd;
-  fd = open("/dev/random",O_RDONLY);
+  fd = open("/dev/urandom",O_RDONLY);
   if(fd == -1) {
     printf("error number %d: %s\n",errno,strerror(errno));
   }else {
